@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<instance name="10_30_3_small_4">
+	<descriptor>
+		<CountProducts value="30"/>
+		<CountOrders value="10"/>
+		<Capacity value="3"/>
+		<MaxTours value="200"/></descriptor>
+	<Orders>
+		<Order Name="Order_1">
+			<OrderProd Product="6"/></Order>
+		<Order Name="Order_2">
+			<OrderProd Product="26"/>
+			<OrderProd Product="18"/></Order>
+		<Order Name="Order_3">
+			<OrderProd Product="27"/>
+			<OrderProd Product="3"/></Order>
+		<Order Name="Order_4">
+			<OrderProd Product="20"/></Order>
+		<Order Name="Order_5">
+			<OrderProd Product="9"/>
+			<OrderProd Product="8"/>
+			<OrderProd Product="9"/></Order>
+		<Order Name="Order_6">
+			<OrderProd Product="26"/>
+			<OrderProd Product="28"/>
+			<OrderProd Product="18"/></Order>
+		<Order Name="Order_7">
+			<OrderProd Product="29"/>
+			<OrderProd Product="17"/></Order>
+		<Order Name="Order_8">
+			<OrderProd Product="24"/>
+			<OrderProd Product="23"/>
+			<OrderProd Product="29"/></Order>
+		<Order Name="Order_9">
+			<OrderProd Product="17"/>
+			<OrderProd Product="21"/></Order>
+		<Order Name="Order_10">
+			<OrderProd Product="28"/>
+			<OrderProd Product="8"/></Order></Orders></instance>
