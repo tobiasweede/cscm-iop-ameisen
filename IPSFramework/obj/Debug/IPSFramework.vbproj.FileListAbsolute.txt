@@ -18,3 +18,14 @@ C:\Users\weiss\Desktop\cscm-iop-tabu\IPSFramework\obj\Debug\IPSFramework.vbproj.
 C:\Users\weiss\Desktop\cscm-iop-tabu\IPSFramework\obj\Debug\IPSFramework.exe
 C:\Users\weiss\Desktop\cscm-iop-tabu\IPSFramework\obj\Debug\IPSFramework.xml
 C:\Users\weiss\Desktop\cscm-iop-tabu\IPSFramework\obj\Debug\IPSFramework.pdb
+C:\Users\weiss\Desktop\cscm-iop-ameisen\IPSFramework\bin\Debug\IPSFramework.exe.config
+C:\Users\weiss\Desktop\cscm-iop-ameisen\IPSFramework\bin\Debug\IPSFramework.exe
+C:\Users\weiss\Desktop\cscm-iop-ameisen\IPSFramework\bin\Debug\IPSFramework.pdb
+C:\Users\weiss\Desktop\cscm-iop-ameisen\IPSFramework\bin\Debug\IPSFramework.xml
+C:\Users\weiss\Desktop\cscm-iop-ameisen\IPSFramework\obj\Debug\IPSFramework.vbprojAssemblyReference.cache
+C:\Users\weiss\Desktop\cscm-iop-ameisen\IPSFramework\obj\Debug\IPSFramework.Resources.resources
+C:\Users\weiss\Desktop\cscm-iop-ameisen\IPSFramework\obj\Debug\IPSFramework.vbproj.GenerateResource.cache
+C:\Users\weiss\Desktop\cscm-iop-ameisen\IPSFramework\obj\Debug\IPSFramework.vbproj.CoreCompileInputs.cache
+C:\Users\weiss\Desktop\cscm-iop-ameisen\IPSFramework\obj\Debug\IPSFramework.exe
+C:\Users\weiss\Desktop\cscm-iop-ameisen\IPSFramework\obj\Debug\IPSFramework.xml
+C:\Users\weiss\Desktop\cscm-iop-ameisen\IPSFramework\obj\Debug\IPSFramework.pdb
