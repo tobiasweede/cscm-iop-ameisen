@@ -1,13 +1,16 @@
 ﻿Module main
 
     Sub Main()
-
         For Each foundFile As String In My.Computer.FileSystem.GetFiles(CurDir() & "\Data\") 'batch load
             Dim NewInstance As New Instance
             NewInstance.LoadInst(foundFile)
             Console.WriteLine("Instance:" + NewInstance.Name)
             Console.WriteLine("Ameisen...")
-            ameisen(NewInstance, 10)
+            Dim sw As New Stopwatch
+            sw.Start()
+            ameisen(NewInstance, 25)
+            sw.Stop()
+            Console.WriteLine("Duration: " + sw.ElapsedMilliseconds.ToString + " ms")
         Next
         Console.WriteLine("Press any key...")
         Console.ReadLine()
@@ -85,20 +88,18 @@
                     ' Deep copy order sequence array and swap two orders
                     Array.Copy(neighborhoodSequences(sequenceIdx), currentOrderSequence, NewInstance.PickingOrders - 1)
                     currentObj = neighborhoodObjectives(sequenceIdx)
+                    ' Update pheromon
+                    For i = 0 To neighborhoodSequences(sequenceIdx).Length() - 2
+                        pheromonmatrix(neighborhoodSequences(sequenceIdx)(i), neighborhoodSequences(sequenceIdx)(i + 1)) =
+                            pheromonmatrix(neighborhoodSequences(sequenceIdx)(i), neighborhoodSequences(sequenceIdx)(i + 1)) + (1 / currentObj)
+                    Next
                     Exit For
                 End If
             Next
         Next
         Console.WriteLine("Best sequence:")
         printSequence(bestOrderSequence)
-        Console.WriteLine("Initial objective value:" + bestObj.ToString)
-    End Sub
-
-    Sub printSequence(ByRef seq As Array)
-        For i = 0 To seq.Length - 1
-            Console.Write(seq(i).ToString + " ")
-        Next
-        Console.WriteLine()
+        Console.WriteLine("Best objective value:" + bestObj.ToString)
     End Sub
 
     Function initSolution(ByRef NewInstance As Instance) As Array
@@ -160,5 +161,12 @@
         End While
         Return obj
     End Function
+    Sub printSequence(ByRef seq As Array)
+        For i = 0 To seq.Length - 1
+            Console.Write(seq(i).ToString + " ")
+        Next
+        Console.WriteLine()
+    End Sub
+
 
 End Module
